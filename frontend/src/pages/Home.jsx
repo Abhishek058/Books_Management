@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineAddBox } from "react-icons/md";
 import BooksTable from "../components/home/BooksTable";
 import BooksCard from "../components/home/BooksCard";
+import ChatbotIcon from "../components/ChatbotIcon";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -52,9 +53,15 @@ const Home = () => {
       {loading ? (
         <Spinner />
       ) : showType == "table" ? (
-        <BooksTable books={books} />
+        <>
+          <BooksTable books={books} />
+          <ChatbotIcon />
+        </>
       ) : (
-        <BooksCard books={books}/>
+        <>
+          <BooksCard books={books} />
+          <ChatbotIcon />
+        </>
       )}
     </div>
   );
