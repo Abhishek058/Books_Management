@@ -10,7 +10,7 @@ const DeleteBook = () => {
   const handleDelete = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5555/books/${id}`)
+      .delete(`https://bookmangement-gkgs.onrender.com/books/${id}`)
       .then(() => {
         setLoading(false);
       })

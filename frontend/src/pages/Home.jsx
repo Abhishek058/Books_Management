@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5555/books")
+      .get("https://bookmangement-gkgs.onrender.com/books")
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
