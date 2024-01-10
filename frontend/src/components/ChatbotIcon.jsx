@@ -1,4 +1,3 @@
-import React from "react";
 import { IoChatbubbles } from "react-icons/io5";
 
 const ChatIcon = () => {
